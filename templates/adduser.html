@@ -1,0 +1,25 @@
+{% extends 'base.html'%} 
+{%block head %}
+<title>Adduser</title>
+{% endblock %} 
+
+{% block body %}
+<form action="/submituser" method="post">
+    <label for="result_id">result_id:</label>
+    <input type="number" name="result_id" id="result_id"> <br><br>
+    <label for="polling_unit_uniqueid">polling_unit_uniqueid:</label>
+    <input type="number" name="polling_unit_uniqueid" id="polling_unit_uniqueid"> <br><br>
+    <label for="party_abbreviation">party_abbreviation:</label>
+    <input type="text" name="party_abbreviation" id="party_abbreviation"><br><br>
+    <label for="party_score">party_score:</label>
+    <input type="number" name="party_score" id="party_score"> <br><br>
+    <label for="entered_by_user">entered_by_user:</label>
+    <input type="text" name="entered_by_user" id="entered_by_user"><br><br>
+    <label for="date_entered">date_entered:</label>
+    <input type="datetime" name="date_entered" id="date_entered"><br><br>
+    <label for="user_ip_address">user_ip_address:</label>
+    <input type="text" name="user_ip_address" id="user_ip_address"> <br><br>
+
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
